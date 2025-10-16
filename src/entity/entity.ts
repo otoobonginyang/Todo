@@ -14,9 +14,5 @@ export class Todoentity extends Base{
 
 @Column ()
   priority: string;
-
-  @ManyToOne (() => Base, (user) => user.todo)
-  @JoinColumn ({ name: "userid"}) //explicitly name co
-  user: Base;
   
 }
